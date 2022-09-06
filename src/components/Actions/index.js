@@ -18,6 +18,24 @@ export default function Actions(){
                 </View>
                 <Text style = {styles.labelButton}>Compras</Text>
             </TouchableOpacity>
+            <TouchableOpacity style = {styles.actionButton}>
+                <View style = {styles.areaButton}>
+                    <AntDesign name = "creditcard" size={26} color="#000"/>
+                </View>
+                <Text style = {styles.labelButton}>Cartão de credito</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style = {styles.actionButton}>
+                <View style = {styles.areaButton}>
+                    <AntDesign name = "barcode" size={26} color="#000"/>
+                </View>
+                <Text style = {styles.labelButton}>Boletos</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style = {styles.actionButton}>
+                <View style = {styles.areaButton}>
+                    <AntDesign name = "setting" size={26} color="#000"/>
+                </View>
+                <Text style = {styles.labelButton}>Conta</Text>
+            </TouchableOpacity>
         </ScrollView>
     );
 }
@@ -44,6 +62,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     labelButton: {
-
+        marginTop: 4,
+        textAlign: 'center',
+        fontWeight: 'bold',
     }
 })
